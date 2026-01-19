@@ -35,7 +35,7 @@ pipeline {
                     sh '''
                         cd backend
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve
+                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
                     '''
                 }
             }
