@@ -17,11 +17,6 @@ terraform {
   }
 }
 
-variable "subscription" {
-  type = string
-}
-
 provider "azurerm" {
   features {}
-  subscription_id = var.subscription
 }

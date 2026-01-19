@@ -35,7 +35,7 @@ pipeline {
                     sh '''
                         cd backend
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve
                     '''
                 }
             }
@@ -47,7 +47,7 @@ pipeline {
                         pwd
                         cd envs/dev
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve 
                     '''
                 }
             }
@@ -58,7 +58,7 @@ pipeline {
                     sh '''
                         cd envs/staging
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve 
                     '''
                 }
             }
@@ -69,7 +69,7 @@ pipeline {
                     sh '''
                         cd envs/prod
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve 
                     '''
                 }
             }
@@ -80,7 +80,7 @@ pipeline {
                     sh '''
                         cd sub_managment/users
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve 
                     '''
                 }
             }
@@ -91,7 +91,7 @@ pipeline {
                     sh '''
                         cd sub_managment/groups
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve 
                     '''
                 }
             }
@@ -102,7 +102,7 @@ pipeline {
                     sh '''
                         cd sub_managment/rbac
                         terraform init -reconfigure
-                        terraform ${action} -auto-approve -var "subscription=$AZURE_SUBSCRIPTION_ID"
+                        terraform ${action} -auto-approve 
                     '''
                 }
             }
