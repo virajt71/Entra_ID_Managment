@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     // Clone the repository
-                    git branch: 'test',
+                    git branch: 'develop',
                         url: 'https://github.com/virajt71/Entra_ID_Managment.git'
                 }
             }
