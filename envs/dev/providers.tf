@@ -11,14 +11,19 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name  = "tfstate-rg"
-    storage_account_name = "tfstatergregergv"
+    storage_account_name = "tfstatergrege33rgv"
     container_name       = "tfstate"
     key                  = "root/envs/dev/terraform.tfstate"
   }
 }
 
+variable "subscription" {
+  type = string
+}
+
 provider "azurerm" {
   features {}
+  subscription_id = var.subscription
 }
 
 provider "azapi" {

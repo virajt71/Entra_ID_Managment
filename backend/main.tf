@@ -10,7 +10,7 @@ module "resource_group" {
 module "storage_account" {
   source = "../modules/storage-account"
 
-  name                            = "${local.name}rgregergv"
+  name                            = "${local.name}rgrege33rgv"
   resource_group_name             = module.resource_group.name
   location                        = module.resource_group.location
   account_tier                    = "Standard"
