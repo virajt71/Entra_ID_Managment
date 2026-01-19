@@ -1,0 +1,5 @@
+Team,Dev,Staging,Prod
+Infra,Contributor,Contributor,Reader + Contributor
+Engineering,Contributor,Reader,Reader
+Operations,Reader + Monitoring Contributor,Reader + Monitoring Contributor,Reader + Monitoring Contributor + Support Request Contributor
+Quality Assurance,Reader,Reader,Reader

@@ -1,0 +1,13 @@
+given_name,surname,job_title,department,password,force_password_change
+John,Smith,Senior DevOps Engineer,Infra,SecurePass123!,True
+Jane,Doe,DevOps Engineer,Infra,SecurePass123!,True
+Mike,Wilson,DevOps Engineer,Infra,SecurePass123!,True
+Sarah,Johnson,Senior QA Engineer,Quality Assurance,SecurePass123!,True
+Tom,Brown,QA Engineer,Quality Assurance,SecurePass123!,True
+Alex,Davis,Senior NOC Engineer,Operations,SecurePass123!,True
+Lisa,Garcia,NOC Engineer,Operations,SecurePass123!,True
+Carlos,Martinez,NOC Engineer,Operations,SecurePass123!,True
+David,Lee,Senior Backend Developer,Engineering,SecurePass123!,True
+Emma,Taylor,Backend Developer,Engineering,SecurePass123!,True
+Ryan,Anderson,Senior Frontend Developer,Engineering,SecurePass123!,True
+Sophie,White,Frontend Developer,Engineering,SecurePass123!,True
