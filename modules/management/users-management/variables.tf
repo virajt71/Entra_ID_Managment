@@ -17,10 +17,13 @@ variable "usage_location" {
 }
 
 variable "default_password" {
-  description = "Default password for users if not specified in CSV"
+  description = "Default password for users if not specified in CSV. REQUIRED: Provide via -var or tfvars. DO NOT hardcode passwords in production."
   type        = string
-  default     = "TempPassword123!"
   sensitive   = true
+  validation {
+    condition     = var.default_password != ""
+    error_message = "default_password must be provided and non-empty. Consider using Azure Key Vault to store and retrieve passwords securely."
+  }
 }
 
 variable "users" {
